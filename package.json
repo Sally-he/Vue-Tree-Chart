@@ -2,12 +2,8 @@
   "name": "vue-tree-chart",
   "version": "1.2.6",
   "description": "A vue2 component to display tree chart",
-  "author": "refined-x [tower1229@foxmail.com]",
+  "author": "refined-x [zhiyu.he]",
   "main": "./dist/TreeChart.common.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tower1229/Vue-Tree-Chart.git"
-  },
   "files": [
     "dist"
   ],
@@ -18,7 +14,7 @@
     "tree chart"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/tower1229/Vue-Tree-Chart/blob/master/README.md",
+  "homepage": "",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

@@ -5,13 +5,6 @@
       <input type="checkbox" v-model="landscape" value="1">
     </label>
     <TreeChart :json="data" :class="{landscape: landscape.length}" @click-node="clickNode" />
-    <footer class="foot">
-        <p>© 2018 - 3018 Author
-            <a href="https://refined-x.com/" target="_blank">雅X共赏</a> 
-            Github 
-            <a href="https://github.com/tower1229/Vue-Tree-Chart" target="_blank">Vue-Tree-Chart</a>
-        </p>
-    </footer>
   </div>
 </template>
 
@@ -28,27 +21,41 @@ export default {
       landscape: [],
       data: {
         name: 'root',
-        image_url: "https://static.refined-x.com/avat.jpg",
+        image_url: "https://static.refined-x.com/avat2.jpg",
         children: [
           {
             name: 'children1',
-            image_url: "https://static.refined-x.com/avat1.jpg"
+            image_url: "https://static.refined-x.com/avat2.jpg"
           },
           {
             name: 'children2',
             image_url: "https://static.refined-x.com/avat2.jpg",
-            mate: {
-              name: 'mate',
-              image_url: "https://static.refined-x.com/avat3.jpg"
-            },
             children: [
               {
                 name: 'grandchild',
-                image_url: "https://static.refined-x.com/avat.jpg"
+                image_url: "https://static.refined-x.com/avat2.jpg"
               },
               {
                 name: 'grandchild2',
-                image_url: "https://static.refined-x.com/avat1.jpg"
+                image_url: "https://static.refined-x.com/avat2.jpg"
+              },
+              {
+                name: 'grandchild3',
+                image_url: "https://static.refined-x.com/avat2.jpg"
+              }
+            ]
+          },
+          {
+            name: 'children3',
+            image_url: "https://static.refined-x.com/avat2.jpg",
+            children: [
+              {
+                name: 'grandchild',
+                image_url: "https://static.refined-x.com/avat2.jpg"
+              },
+              {
+                name: 'grandchild2',
+                image_url: "https://static.refined-x.com/avat2.jpg"
               },
               {
                 name: 'grandchild3',
